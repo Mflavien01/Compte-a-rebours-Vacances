@@ -45,3 +45,11 @@ a:hover {
     align-items: stretch;
   }
 }
+
+#library {
+  display: none;
+}
+
+canvas {
+  -webkit-transform: translateZ(0);
+}
