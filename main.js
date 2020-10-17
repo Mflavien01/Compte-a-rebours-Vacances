@@ -451,7 +451,7 @@ document.getElementById("clock").innerHTML = days + " jours, " + hours + " heure
 if (distance <= 0 && endVacation-now >= 0) {
 	i++;
 	document.getElementById("vacation").innerHTML = "🎉C'est les vacances🎉"
-	createFirework();
+	Fireworks.createFirework();
 }
 if (distance <= 0 && endVacation-now <= 0){
 	j++;
