@@ -46,10 +46,3 @@ a:hover {
   }
 }
 
-#library {
-  display: none;
-}
-
-canvas {
-  -webkit-transform: translateZ(0);
-}
