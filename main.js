@@ -22,4 +22,7 @@ if (distance <= 0 && endVacation-now <= 0){
 	j++;
 	document.getElementById("vacation").innerHTML = "";
 }
+if (distance >= 0 && endVacation-now <= 0){
+	document.getElementById("vacation").innerHTML = "";
+}
 })
