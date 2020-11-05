@@ -24,16 +24,16 @@ if (unit=="month"){
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	document.getElementById("clock").innerHTML = days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
 }else if (unit=="hour"){
-	var hours = Math.floor((distance / (1000 * 60 * 60));
+	var hours = Math.floor(distance / (1000 * 60 * 60));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	document.getElementById("clock").innerHTML = hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
 }else if (unit=="minute"){
-	var minutes = Math.floor((distance / (1000 * 60));
+	var minutes = Math.floor(distance / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	document.getElementById("clock").innerHTML = minutes + " minutes, " + seconds + " secondes ";
 }else {
-	var seconds = Math.floor((distance / 1000);
+	var seconds = Math.floor(distance / 1000);
 	document.getElementById("clock").innerHTML = seconds + " secondes ";
 }
 	
