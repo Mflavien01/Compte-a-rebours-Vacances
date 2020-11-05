@@ -10,13 +10,34 @@ var endVacation = endDAtes[j];
 var now = new Date().getTime();
 var distance = vacation - now;
 var unit = document.getElementById("unit").value;
-console.log(unit);
-var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
-var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 7)/(1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-document.getElementById("clock").innerHTML = weeks + " semaines, " + days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
+if (unit=="month"){
+	var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
+	var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 7)/(1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	document.getElementById("clock").innerHTML = weeks + " semaines, " + days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
+}else if (unit=="day"){
+	var days = Math.floor(distance /(1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	document.getElementById("clock").innerHTML = days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
+}else if (unit=="hour"){
+	var hours = Math.floor((distance / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	document.getElementById("clock").innerHTML = hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
+}else if (unit=="minute"){
+	var minutes = Math.floor((distance / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	document.getElementById("clock").innerHTML = minutes + " minutes, " + seconds + " secondes ";
+}else {
+	var seconds = Math.floor((distance / 1000);
+	document.getElementById("clock").innerHTML = seconds + " secondes ";
+}
+	
+	
 if (distance <= 0 && endVacation-now >= 0) {
 	i++;
 	document.getElementById("vacation").innerHTML = "🎉C'est les vacances🎉"
