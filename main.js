@@ -9,7 +9,7 @@ var vacation = dates[i];
 var endVacation = endDAtes[j];
 var now = new Date().getTime();
 var distance = vacation - now;
-var unit = document.getElementById("unit");
+var unit = document.getElementById("unit").value;
 console.log(unit);
 var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
 var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 7)/(1000 * 60 * 60 * 24));
