@@ -16,33 +16,21 @@ if (unit=="week"){
 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	if (weeks==0){
-		unit="day";
-	}
 	document.getElementById("clock").innerHTML = weeks + " semaines, " + days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
 }else if (unit=="day"){
 	var days = Math.floor(distance /(1000 * 60 * 60 * 24));
 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	if (days==0){
-		unit="hour";
-	}
 	document.getElementById("clock").innerHTML = days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
 }else if (unit=="hour"){
 	var hours = Math.floor(distance / (1000 * 60 * 60));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	if (hours==0){
-		unit="minute";
-	}
 	document.getElementById("clock").innerHTML = hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
 }else if (unit=="minute"){
 	var minutes = Math.floor(distance / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	if (minute==0){
-		unit="second";
-	}
 	document.getElementById("clock").innerHTML = minutes + " minutes, " + seconds + " secondes ";
 }else {
 	var seconds = Math.floor(distance / 1000);
