@@ -16,21 +16,57 @@ if (unit=="week"){
 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	if (weeks==0){
+		document.getElementById("week").disabled=true;
+		document.getElementById("unit").value="day";
+	}else {
+		document.getElementById("week").disabled=false;
+		document.getElementById("day").disabled=false;
+		document.getElementById("hour").disabled=false;
+		document.getElementById("minute").disabled=false;
+	}
 	document.getElementById("clock").innerHTML = weeks + " semaines, " + days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
 }else if (unit=="day"){
 	var days = Math.floor(distance /(1000 * 60 * 60 * 24));
 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	if (weeks==0 && days==0){
+		document.getElementById("week").disabled=true;
+		document.getElementById("day").disabled=true;
+		document.getElementById("unit").value="hour";
+	}else {
+		document.getElementById("day").disabled=false;
+		document.getElementById("hour").disabled=false;
+		document.getElementById("minute").disabled=false;
+	}
 	document.getElementById("clock").innerHTML = days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
 }else if (unit=="hour"){
 	var hours = Math.floor(distance / (1000 * 60 * 60));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	if (weeks==0 && days==0 && hours==0){
+		document.getElementById("week").disabled=true;
+		document.getElementById("day").disabled=true;
+		document.getElementById("hour").disabled=true;
+		document.getElementById("unit").value="minute";
+	}else {
+		document.getElementById("hour").disabled=false;
+		document.getElementById("minute").disabled=false;
+	}
 	document.getElementById("clock").innerHTML = hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
 }else if (unit=="minute"){
 	var minutes = Math.floor(distance / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	if (weeks==0 && days==0 && hours==0 && minutes==0){
+		document.getElementById("week").disabled=true;
+		document.getElementById("day").disabled=true;
+		document.getElementById("hour").disabled=true;
+		document.getElementById("minute").disabled=true;
+		document.getElementById("unit").value="second";
+	}else {
+		document.getElementById("minute").disabled=false;
+	}
 	document.getElementById("clock").innerHTML = minutes + " minutes, " + seconds + " secondes ";
 }else {
 	var seconds = Math.floor(distance / 1000);
