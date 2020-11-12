@@ -95,10 +95,14 @@ if (distance <= 0 && endVacation-now <= 0){
 	
 if (j==0){
 	document.body.style.backgroundImage = "url(halloween.jpg)";
+	document.body.style.color="white";
+	document.label.style.color="white";
 }
 	
 if (j==1){
 	document.body.style.backgroundImage = "url(noel.jpg)";
+	document.body.style.color="white";
+	document.label.style.color="white";
 }
 
 if (j==2){
