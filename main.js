@@ -92,5 +92,25 @@ if (distance <= 0 && endVacation-now <= 0){
 	j++;
 	i++;
 }
+	
+if (j==0){
+	changeBackground(document.body, "halloween.jpg");
+}
+	
+if (j==1){
+	changeBackground(document.body, "noel.jpg");
+}
+
+if (j==2){
+	changeBackground(document.body, "ski.jpg");
+}
+	
+if (j==3){
+	changeBackground(document.body, "paques.jpg");
+}
+	
+if (j==4){
+	changeBackground(document.body, "vacances.jpg");
+}
 
 })
