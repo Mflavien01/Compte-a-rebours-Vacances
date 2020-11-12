@@ -102,7 +102,7 @@ if (j==0){
 if (j==1){
 	document.body.style.backgroundImage = "url(noel.jpg)";
 	document.body.style.color="green";
-	document.getElementById("unitLabel").style.color="green";
+	document.getElementById("unitLabel").style.color="white";
 }
 
 if (j==2){
