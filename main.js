@@ -101,8 +101,8 @@ if (j==0){
 	
 if (j==1){
 	document.body.style.backgroundImage = "url(noel.jpg)";
-	document.body.style.color="grey";
-	document.getElementById("unitLabel").style.color="grey";
+	document.body.style.color="green";
+	document.getElementById("unitLabel").style.color="green";
 }
 
 if (j==2){
