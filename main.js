@@ -107,16 +107,20 @@ if (j==1){
 
 if (j==2){
 	document.body.style.backgroundImage = "url(ski.jpg)";
-	document.body.style.color="blue";
-	document.getElementById("unitLabel").style.color="blue";
+	document.body.style.color="yellow";
+	document.getElementById("unitLabel").style.color="yellow";
 }
 	
 if (j==3){
 	document.body.style.backgroundImage = "url(paques.jpg)";
+	document.body.style.color="yellow";
+	document.getElementById("unitLabel").style.color="yellow";
 }
 	
 if (j==4){
 	document.body.style.backgroundImage = "url(vacances.jpg)";
+	document.body.style.color="black";
+	document.getElementById("unitLabel").style.color="white";
 }
 
 })
