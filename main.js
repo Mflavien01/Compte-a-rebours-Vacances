@@ -25,7 +25,7 @@ if (unit=="week"){
 		document.getElementById("hour").disabled=false;
 		document.getElementById("minute").disabled=false;
 	}
-	document.getElementById("clock").innerHTML = weeks + " semaines, " + days + " jours, " + hours + " heures, " + minutes + " minutes, " + seconds + " secondes ";
+	document.getElementById("clock").innerHTML = weeks + " semaines\n" + days + " jours\n" + hours + " heures\n" + minutes + " minutes\n" + seconds + " secondes ";
 }else if (unit=="day"){
 	var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
 	var days = Math.floor(distance /(1000 * 60 * 60 * 24));
