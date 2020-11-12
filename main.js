@@ -107,8 +107,8 @@ if (j==1){
 
 if (j==2){
 	document.body.style.backgroundImage = "url(ski.jpg)";
-	document.body.style.color="yellow";
-	document.getElementById("unitLabel").style.color="yellow";
+	document.body.style.color="blue";
+	document.getElementById("unitLabel").style.color="blue";
 }
 	
 if (j==3){
