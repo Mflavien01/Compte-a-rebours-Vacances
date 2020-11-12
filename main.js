@@ -94,23 +94,23 @@ if (distance <= 0 && endVacation-now <= 0){
 }
 	
 if (j==0){
-	changeBackground(document.body, "halloween.jpg");
+	document.body.style.backgroundImage = "url(halloween.jpg)";
 }
 	
 if (j==1){
-	changeBackground(document.body, "noel.jpg");
+	document.body.style.backgroundImage = "url(noel.jpg)";
 }
 
 if (j==2){
-	changeBackground(document.body, "ski.jpg");
+	document.body.style.backgroundImage = "url(ski.jpg)";
 }
 	
 if (j==3){
-	changeBackground(document.body, "paques.jpg");
+	document.body.style.backgroundImage = "url(paques.jpg)";
 }
 	
 if (j==4){
-	changeBackground(document.body, "vacances.jpg");
+	document.body.style.backgroundImage = "url(vacances.jpg)";
 }
 
 })
