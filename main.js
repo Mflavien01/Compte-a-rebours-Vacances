@@ -3,6 +3,8 @@ let endDAtes=[new Date("Nov 2, 2020 00:00:00").getTime(),new Date("Jan 4, 2021 0
 var i = 0;
 var j = 0;
 
+document.body.style.height="".concat(screen.height,"px");
+
 var x = setInterval(function() {
 var vacation = dates[i];
 var endVacation = endDAtes[j];
@@ -120,8 +122,6 @@ if (j==4){
 	document.body.style.backgroundImage = "url(vacances.jpg)";
 	document.body.style.color="black";
 	document.getElementById("unitLabel").style.color="white";
-}
-
-document.body.style.height="".concat(screen.height,"px");	
+}	
 	
 })
