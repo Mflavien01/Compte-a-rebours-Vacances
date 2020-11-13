@@ -101,7 +101,7 @@ if (j==0){
 }
 	
 if (j==1){
-	document.body.style.backgroundImage = "url(noelTel.jpg)";
+	document.body.style.backgroundImage = "url(noel.jpg)";
 	document.body.style.color="white";
 	document.getElementById("unitLabel").style.color="white";
 }
