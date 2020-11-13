@@ -8,6 +8,7 @@ var x = setInterval(function() {
 document.body.style.width="auto";*/
 document.body.style.width="".concat(Math.round(innerHeight*5668/3779),"px");
 document.body.style.height="auto";
+document.body.style.backgroundSize="".concat(innerHeight,"px ",innerWidth,"px");
 
 var vacation = dates[i];
 var endVacation = endDAtes[j];
