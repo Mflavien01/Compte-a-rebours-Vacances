@@ -5,6 +5,7 @@ var j = 0;
 
 var x = setInterval(function() {
 document.body.style.height="".concat(innerHeight,"px");
+document.body.style.width="".concat((3779*innerHeight/5668),"px");
 var vacation = dates[i];
 var endVacation = endDAtes[j];
 var now = new Date().getTime();
