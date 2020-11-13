@@ -151,7 +151,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("clock").style.fontSize="40px";
 } else{
 	document.getElementById("h1").style.fontSize="90px";
-	document.getElementById("vacation").style.fontSize="130px";
+	document.getElementById("vacation").style.fontSize="100px";
 	document.getElementById("p").style.fontSize="70px";
 	document.getElementById("clock").style.fontSize="70px";
 }
