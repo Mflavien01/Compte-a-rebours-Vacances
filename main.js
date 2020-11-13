@@ -145,9 +145,15 @@ if (j==4){
 }
 	
 if (window.screen.width > window.screen.height){
-	
+	document.getElementById("h1").style.fontSize="50px";
+	document.getElementById("vacation").style.fontSize="80px";
+	document.getElementById("p").style.fontSize="40px";
+	document.getElementById("clock").style.fontSize="40px";
 } else{
-	
+	document.getElementById("h1").style.fontSize="100px";
+	document.getElementById("vacation").style.fontSize="160px";
+	document.getElementById("p").style.fontSize="80px";
+	document.getElementById("clock").style.fontSize="80px";
 }
 	
 })
