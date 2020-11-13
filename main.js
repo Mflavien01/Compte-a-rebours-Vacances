@@ -3,11 +3,8 @@ let endDAtes=[new Date("Nov 2, 2020 00:00:00").getTime(),new Date("Jan 4, 2021 0
 var i = 0;
 var j = 0;
 
-alert(innerHeight);
-
-document.body.style.height="".concat(screen.height,"px");
-
 var x = setInterval(function() {
+document.body.style.height="".concat(innerHeight,"px");
 var vacation = dates[i];
 var endVacation = endDAtes[j];
 var now = new Date().getTime();
