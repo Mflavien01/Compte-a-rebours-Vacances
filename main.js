@@ -123,4 +123,6 @@ if (j==4){
 	document.getElementById("unitLabel").style.color="white";
 }
 
+document.body.style.height=screen.height;
+
 })
