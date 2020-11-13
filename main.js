@@ -142,6 +142,12 @@ if (j==4){
 	}
 	document.body.style.color="black";
 	document.getElementById("unitLabel").style.color="white";
-}	
+}
+	
+if (window.screen.width > window.screen.height){
+	
+} else{
+	
+}
 	
 })
