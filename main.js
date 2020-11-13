@@ -145,7 +145,7 @@ if (j==4){
 }
 	
 if (window.screen.width > window.screen.height){
-	
+	document.h1.style.color = "blue";
 } else{
 	
 }
