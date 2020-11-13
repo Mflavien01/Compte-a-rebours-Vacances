@@ -4,8 +4,11 @@ var i = 0;
 var j = 0;
 
 var x = setInterval(function() {
-document.body.style.height="".concat(innerHeight,"px");
-document.body.style.width="auto";
+/*document.body.style.height="".concat(innerHeight,"px");
+document.body.style.width="auto";*/
+document.body.style.width="".concat(Math.round(innerHeight*5668/3779),"px");
+document.body.style.height="auto";
+
 var vacation = dates[i];
 var endVacation = endDAtes[j];
 var now = new Date().getTime();
