@@ -95,31 +95,51 @@ if (distance <= 0 && endVacation-now <= 0){
 }
 	
 if (j==0){
-	document.body.style.backgroundImage = "url(halloween.jpg)";
+	if (window.screen.width > window.screen.height){
+		document.body.style.backgroundImage = "url(halloween.jpg)";
+	} else{
+		document.body.style.backgroundImage = "url(halloweenTel.jpg)";
+	}
 	document.body.style.color="white";
 	document.getElementById("unitLabel").style.color="white";
 }
 	
 if (j==1){
-	document.body.style.backgroundImage = "url(noel.jpg)";
+	if (window.screen.width > window.screen.height){
+		document.body.style.backgroundImage = "url(noel.jpg)";
+	} else{
+		document.body.style.backgroundImage = "url(noelTel.jpg)";
+	}
 	document.body.style.color="white";
 	document.getElementById("unitLabel").style.color="white";
 }
 
 if (j==2){
-	document.body.style.backgroundImage = "url(ski.jpg)";
+	if (window.screen.width > window.screen.height){
+		document.body.style.backgroundImage = "url(ski.jpg)";
+	} else{
+		document.body.style.backgroundImage = "url(skiTel.jpg)";
+	}
 	document.body.style.color="yellow";
 	document.getElementById("unitLabel").style.color="yellow";
 }
 	
 if (j==3){
-	document.body.style.backgroundImage = "url(paques.jpg)";
+	if (window.screen.width > window.screen.height){
+		document.body.style.backgroundImage = "url(paques.jpg)";
+	} else{
+		document.body.style.backgroundImage = "url(paquesTel.jpg)";
+	}
 	document.body.style.color="yellow";
 	document.getElementById("unitLabel").style.color="yellow";
 }
 	
 if (j==4){
-	document.body.style.backgroundImage = "url(vacances.jpg)";
+	if (window.screen.width > window.screen.height){
+		document.body.style.backgroundImage = "url(vacances.jpg)";
+	} else{
+		document.body.style.backgroundImage = "url(vacancesTel.jpg)";
+	}
 	document.body.style.color="black";
 	document.getElementById("unitLabel").style.color="white";
 }	
