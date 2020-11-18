@@ -37,7 +37,9 @@ var i = 0;
 var j = 0;
 
 var x = setInterval(function() {
-	document.body.style.height="".concat(innerHeight,"px");
+	if (innerHeight>800){
+		document.body.style.height="".concat(innerHeight,"px");
+	}
 
 	var vacation = dates[i];
 	var endVacation = endDAtes[j];
