@@ -8,7 +8,7 @@ var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		var response = JSON.parse(this.responseText);
-		alert();
+		alert(Object.keys(response["records"]).length);
 		for (let i = 0; i < 6; i++) {
   			if(response["records"][i]["fields"]["description"]=="Vacances de la Toussaint"){
   				dates[0]=new Date("".concat(response["records"][i]["fields"]["start_date"],"T12:13:00"));
