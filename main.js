@@ -203,4 +203,4 @@ var x = setInterval(function() {
 		document.getElementById("clock").style.fontSize="70px";
 	}
 		
-}, 10)
+}, 50)
