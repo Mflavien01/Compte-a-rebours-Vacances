@@ -1,5 +1,6 @@
 var dates=[];
 var endDAtes=[];
+var now;
 
 var annee='2020-2021'
 var endpoint = ''.concat('https://data.education.gouv.fr/api/records/1.0/search/?dataset=fr-en-calendrier-scolaire&q=&facet=description&facet=start_date&facet=end_date&facet=location&facet=zones&facet=annee_scolaire&refine.zones=Zone+C&refine.annee_scolaire=',annee,'&refine.location=Versailles&timezone=Europe%2FParis');
@@ -40,8 +41,6 @@ var x = setInterval(function() {
 	if (innerHeight>800){
 		document.body.style.height="".concat(innerHeight,"px");
 	}
-
-	var now;
 
 	var endpoint = 'https://api-ratp.pierre-grimaud.fr/v4/traffic';
 
