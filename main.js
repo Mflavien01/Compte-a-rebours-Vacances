@@ -49,7 +49,7 @@ var x = setInterval(function() {
 	xhr.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			var response = JSON.parse(this.responseText);
-			now= new Date(response.result._metadata.date);
+			now= new Date(response._metadata.date);
 		}
 
 	};
