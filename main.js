@@ -53,8 +53,7 @@ var x = setInterval(function() {
 
 	};
 	xhr.open('GET', endpoint, true);
-	xhr.send();	
-	console.log(now);
+	xhr.send();
 	
 	var vacation = dates[i];
 	var endVacation = endDAtes[j];
