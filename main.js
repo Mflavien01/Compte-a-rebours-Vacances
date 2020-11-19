@@ -41,9 +41,23 @@ var x = setInterval(function() {
 		document.body.style.height="".concat(innerHeight,"px");
 	}
 
+	var now;
+
+	var endpoint = 'https://api-ratp.pierre-grimaud.fr/v4/traffic';
+
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var response = JSON.parse(this.responseText);
+			now= new Date(response.result._metadata.date);
+		}
+
+	};
+xhr.open('GET', endpoint, true);
+xhr.send();	
+
 	var vacation = dates[i];
 	var endVacation = endDAtes[j];
-	var now = new Date().getTime();
 	var distance = vacation - now;
 	var unit = document.getElementById("unit").value;
 	if (unit=="week"){
@@ -190,4 +204,4 @@ var x = setInterval(function() {
 		document.getElementById("clock").style.fontSize="70px";
 	}
 		
-})
+}, 500)
