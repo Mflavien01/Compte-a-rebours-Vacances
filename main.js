@@ -49,13 +49,14 @@ var x = setInterval(function() {
 	xhr.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			var response = JSON.parse(this.responseText);
-			now= new Date(response._metadata.date);
+			now=new Date(response._metadata.date);
 		}
 
 	};
-xhr.open('GET', endpoint, true);
-xhr.send();	
-
+	xhr.open('GET', endpoint, true);
+	xhr.send();	
+	console.log(now);
+	
 	var vacation = dates[i];
 	var endVacation = endDAtes[j];
 	var distance = vacation - now;
